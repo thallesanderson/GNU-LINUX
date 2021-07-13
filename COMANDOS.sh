@@ -8,3 +8,6 @@ sudo apt install exonerate ; echo 1 > /sys/module/bluetooth/parameters/disable_e
 
 sudo apt-get install firmware-amd-graphics
 
+3 - INSTALAÇÃO DOS DRIVERS DAS NOVAS PLACAS DE WIFI 6 & BLUETOOTH 5 DA INTEL.
+
+sudo apt-get install firmware-iwlwifi
