@@ -23,6 +23,11 @@ sudo apt-get install -y openvpn network-manager-openvpn network-manager-openvpn-
 sudo apt-get clean && sudo apt-get autoremove --purge -y $(dpkg -l | grep '^rc' | awk '{print $2}')
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 06 - HABILITAR CANAL DE AUDIO COM REDUÇÃO DE RUIDOS.
+
 nano /etc/pulse/default.pa (COMANDO QUE IRA ABRIR NO ARQUIVO DE CONFIGURAÇÃO PELO EDITOR "NANO")
 load-module module-echo-cancel (LINHA DE CODIGO QUE DEVE SER ADICIONADO NA PAGINA QUE IRA APARECER NO COMANDO ACIMA, SALVE A ALTERAÇÃO E REINICIE A MAQUINA)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+07 - PERMISSÃO DE ROOT SSH.
+
+sudo sed -i '/PermitRootLogin/ s/.*/PermitRootLogin yes/g' /etc/ssh/sshd_config ; sudo service ssh restart
+
