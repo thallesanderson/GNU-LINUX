@@ -16,3 +16,7 @@ sudo apt-get install firmware-iwlwifi
 
 sudo apt-get install -y openvpn network-manager-openvpn network-manager-openvpn-gnome
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+05 - LIMPAR RESIDUOS DE CONFIGURAÇÃO PELO TERMINAL.
+
+sudo apt-get clean && sudo apt-get autoremove --purge -y $(dpkg -l | grep '^rc' | awk '{print $2}')
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
