@@ -31,3 +31,8 @@ load-module module-echo-cancel (LINHA DE CODIGO QUE DEVE SER ADICIONADO NA PAGIN
 
 sudo sed -i '/PermitRootLogin/ s/.*/PermitRootLogin yes/g' /etc/ssh/sshd_config ; sudo service ssh restart
 
+08 - COMANDO PARA DESLIGAR A MAQUINA COM HORARIO PROGRAMADO.
+
+sudo shutdown -h 17:00
+
+
